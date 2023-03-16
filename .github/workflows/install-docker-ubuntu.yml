@@ -1,0 +1,29 @@
+## Using repository
+
+
+```
+#!/bin/sh	#!/bin/sh
+# https://docs.docker.com/engine/installation/linux/ubuntu/#install-using-the-repository	# https://docs.docker.com/engine/installation/linux/ubuntu/#install-using-the-repository
+sudo apt-get update && sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common	sudo apt-get update && sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+@@ -9,15 +10,16 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
+sudo apt-get update	sudo apt-get update
+sudo apt-get install -y docker-ce	sudo apt-get install -y docker-ce
+sudo docker run --rm hello-world	sudo docker run --rm hello-world
+```
+
+
+## Using latest Docker release	## Using latest Docker release
+
+
+curl -fsSL https://get.docker.com/ | sh	    $ curl -fsSL https://get.docker.com/ | sh
+
+
+## Finishing installation	## Finishing installation
+
+
+Optional - add $USER to docker group (make sure to log out and back in after)	Optional - add $USER to docker group (make sure to log out and back in after)
+
+
+# sudo groupadd docker	    $ sudo groupadd docker
+# sudo usermod -aG docker $USER	    $ sudo usermod -aG docker $USER
+# sudo systemctl restart docker	    $ sudo systemctl restart docker
