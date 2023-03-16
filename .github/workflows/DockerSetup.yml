@@ -1,6 +1,7 @@
-## Using repository
+## Installing with apt-get
 
-#!/bin/sh
+``` 
+!/bin/sh
 # https://docs.docker.com/engine/installation/linux/ubuntu/#install-using-the-repository
 sudo apt-get update && sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -10,9 +11,10 @@ sudo apt-get update
 sudo apt-get install -y docker-ce
 sudo docker run --rm hello-world
 
-## Using latest Docker release
+```
+## Installing using the latest Docker release
 
-curl -fsSL https://get.docker.com/ | sh -
+$ curl -fsSL https://get.docker.com/ | sh
 
 ## Finishing installation
 
