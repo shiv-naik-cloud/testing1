@@ -12,7 +12,7 @@ sudo docker run --rm hello-world
 
 ## Using latest Docker release
 
-curl -fsSL https://get.docker.com/ | sh
+curl -fsSL https://get.docker.com/ | sh -
 
 ## Finishing installation
 
